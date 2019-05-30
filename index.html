@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+   <style>
+       
+       html, body{
+         height: 100%;
+         width: 100%;
+         margin: 0px;
+       }
+      .container{
+        height:100%;
+        background: aqua;
+      }
+      .content{
+
+        height: 85%;
+        background: white;
+      }
+
+      .theamcolor
+      {
+          background:navy;
+          color: black
+      }
+      div.topbar{
+          height: 10%;
+
+      }
+      .bottombar{
+          height: 5%;
+
+      }
+
+      .sidemenu{
+         background:rgb(212, 212, 211);
+        width: 20%;
+        height: 100%;
+        display: inline-block;
+        padding: 20px;
+      }
+
+      .content-holder{
+        background: white;
+        width: 80%;
+        height: 100%;
+        float: right;
+      }
+      .brand-info-holder
+      {
+        
+        background: darkgoldenrod;
+      }
+      div.search-bar
+      {
+        height: inherit;
+        width: 50%;
+        position: absolute;
+        margin-left: 25%;
+      }
+      #search-box
+      {
+        width: -webkit-fill-available;
+        height: 40%;
+        background: #ffffff66;
+        border: none;
+        padding: 5px;
+      }
+      div.item-wrapper{
+        height: 240px;
+        width: 170px;
+        border: 1px solid black;
+        margin: 20px;
+        float: left;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .filter-menu
+      {
+        margin: 10px;
+        background: green;
+      }
+      .filter-menu > input{
+        margin: 5px;
+      }
+      .filter-menu > label{
+        margin: 5px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="container " >
+      <div class="topbar theamcolor">
+          
+            <div class="brand-info-holder"></div>
+            <div class="search-bar" >
+              <input id="search-box" list="product-list" placeholder="Search..."/>
+              <datalist id="product-list"> 
+                <option>ABC Product 1</option>
+                <option>BCD Product 2</option>
+                <option>CDE Product 3</option>
+                <option>DEF Product 4</option>
+              </datalist>
+            </div>
+          
+      </div>
+      <div class="content ">
+         <span> 
+           <div class="sidemenu">
+             <div>FILTERS</div>
+             <div class="filter-menu">
+               <label>RAM</label><br>
+               <input type="checkbox" name="available-ram-list" value="2 GB"/>2 GB<br>
+               <input type="checkbox" name="available-ram-list" value="4 GB"/>4 GB<br>
+               <input type="checkbox" name="available-ram-list" value="8 GB"/>8 GB<br>
+               <input type="checkbox" name="available-ram-list" value="16 GB"/>16 GB<br>
+               <input type="checkbox" name="available-ram-list" value="32 GB"/>32 GB<br>
+               
+             </div>
+           </div>
+           <div class="content-holder">
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+             <div class="item-wrapper"></div>
+           </div>
+         </span>
+      </div>
+      <div class="bottombar theamcolor"></div>
+    </div>
+</body>
